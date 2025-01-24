@@ -1,17 +1,12 @@
- name: CI
+name: Reuse Hello World Action
+on:
+  push:
+    branches:
+      - main
 
- on:
-   push:
-     branches:
-       - main
-
- jobs:
-   build:
-     runs-on: ubuntu-latest
-
-     steps:
-       - name: Get Your Code
-         uses: actions/checkout@v2
-
-       - name: Say Hello to the World
-         uses: hijackdemo/test_action@v1.0.2
+jobs:
+  call-reusable-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Use hello-world action
+        uses: hijackdemo/test_action@v1
