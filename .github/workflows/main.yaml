@@ -14,4 +14,4 @@
          uses: actions/checkout@v2
 
        - name: Say Hello to the World
-         uses: hijackdemo/test_action@v1
+         uses: hijackdemo/test_action
