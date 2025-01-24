@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Use hello-world action
-        uses: hijackdemo/test_action
+        uses: hijackdemo/test_action@v1.0.3
